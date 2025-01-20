@@ -55,3 +55,9 @@ Some of the most notable vulnerabilities as of 2021 are:
         - usage of non-interpreter APIs
         - input validation
         - principle of least privilege
+        - LIMIT in SQL to prevent mass data breach
+
+4. Insecure design: (not insecure implementation) failure in determining the level of security required which may lead to poor defense against attacks even when the implementation
+    is top-notch. (A broader topic)
+    __Caused by:
+        - 
