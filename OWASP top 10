@@ -8,4 +8,33 @@ This document helps in a more secure coding practice across all the organization
 
 Some of the most notable vulnerabilities as of 2021 are:
 
-1. Broken Access control
+1. Broken Access control: This vulnerbility can be defined as gaining access or privileges over something attackers are not supposed to have by which confidential information may 
+    be disclosed and chaos can be emerged. Basically unauthorized access to confidential resources or information.
+    __Caused by:
+      - violation of deny by default
+      - authentication flaws
+      - authorization issues
+      - injection vulnerabilities
+      - CORS misconfiguration
+      - metadata manipulation
+    __Impacts:
+      - Data breaches
+      - compliance failures
+      - operational disruptions
+      - privilege escalations
+    __Prevention:
+      - access validation
+      - regular reviews
+      - function-level access controls
+
+2. Cryptographics failures: Any failure responsible for the exposure of sensitive and critical data to an unauthorized entity. (Probably during transit)
+    __Caused by:
+      - hard-coded passwords
+      - insufficient entropy(randomness)
+      - Broken/risky crypto algorithm
+    __Impacts:
+      - Man-in-the-middle attacks
+      - Data breaches and leaks
+      - Damaged reputation and trust
+    __Prevention:
+      - 
