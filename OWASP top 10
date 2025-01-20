@@ -1,12 +1,12 @@
 OWASP(Open worldwide application security project) is a non-profit organization that helps to provide guidelines or a framework for development and maintenance of trustworthy 
-applications. Done by include free publicly available documents, videos and case studies regarding web application security vulnerabilities and the most notable one being the 
+applications. Done by including free publicly available documents, videos and case studies regarding web application security vulnerabilities and the most notable one being the 
 OWASP top 10.
 
 OWASP TOP 10:
-It is a standard document used by developers to understand the possible most notable risks and vulnerabilities that are needed to be kept in mind while development. 
+It is a standard document used by developers to understand the possible and most notable risks and vulnerabilities that are needed to be kept in mind while development. 
 This document helps in a more secure coding practice across all the organizations (As it is open-source).
 
-Some of the most notable vulnerabilities as of 2021 are:
+OWASP top 10 vulnerabilities as of 2021 are:
 
 1. Broken Access control: This vulnerbility can be defined as gaining access or privileges over something attackers are not supposed to have by which confidential information may 
     be disclosed and chaos can be emerged. Basically unauthorized access to confidential resources or information.
@@ -85,4 +85,26 @@ Some of the most notable vulnerabilities as of 2021 are:
         - Legal penalties
         - Reputational damage
     __Prevention:
+        - constant testing to build new environments with different credentials
+        - Minimal platforms
+        - Patch management
+        - Security headers and automations for verification
+
+6. Vulnerable and outdated components: self-explanatory
+    __Caused by:
+        - usage of vulnerable, unsupported and outdated software for critical tasks
+        - Fixing, patching or upgrading delays/omission
+        - Absence of scanning and testing of compatability of updates
+    __Impacts:
+        - Distributed Denial-of-Service
+        - Remote code execution attacks
+        - Data integrity violations
+    __Prevention:
+        - removing unnecessary dependencies, features
+        - Obtain signed and official components from official and trusted links
+        - Security patches
+
+7. Identification and authentication failures: Failed to confirm the user's identity, auth and session management
+    __Caused by:
+        - Permitted credential stuffing & brute forcing
         - 
