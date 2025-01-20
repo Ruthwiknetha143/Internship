@@ -1,0 +1,11 @@
+OWASP(Open worldwide application security project) is a non-profit organization that helps to provide guidelines or a framework for development and maintenance of trustworthy 
+applications. Done by include free publicly available documents, videos and case studies regarding web application security vulnerabilities and the most notable one being the 
+OWASP top 10.
+
+OWASP TOP 10:
+It is a standard document used by developers to understand the possible most notable risks and vulnerabilities that are needed to be kept in mind while development. 
+This document helps in a more secure coding practice across all the organizations (As it is open-source).
+
+Some of the most notable vulnerabilities as of 2021 are:
+
+1. Broken Access control
