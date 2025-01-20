@@ -60,4 +60,15 @@ Some of the most notable vulnerabilities as of 2021 are:
 4. Insecure design: (not insecure implementation) failure in determining the level of security required which may lead to poor defense against attacks even when the implementation
     is top-notch. (A broader topic)
     __Caused by:
-        - 
+        - Insufficient data validation
+        - Insecure data storage/data protection
+        - Improper communication
+        - Poor error handling
+    __Impacts:
+        - Bypassing Authentication mechanisms
+        - Data mining for sensitive information
+        - Complete account takeover
+    __Prevention:
+        - Regular security auditing
+        - Strong security controls
+        - Continuous monitoring and Testing
