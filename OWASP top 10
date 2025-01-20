@@ -72,3 +72,17 @@ Some of the most notable vulnerabilities as of 2021 are:
         - Regular security auditing
         - Strong security controls
         - Continuous monitoring and Testing
+
+5. Security Misconfiguration: insecure security options or settings that don't maximize the security posture of an application
+    __Caused by:
+        - Improper permissions & unnecessary features
+        - Default account passwords
+        - Outdated/Vulnerable softwares usage
+        - Error handling
+    __Impacts:
+        - Data breaches/Loss
+        - Financial loss
+        - Legal penalties
+        - Reputational damage
+    __Prevention:
+        - 
