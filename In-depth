@@ -1,1 +1,54 @@
-Broken access control - 
+---> A1 -- Broken Access control - Failure to enforce access controls which leads to unauthorized access which is broken (flawed) and can be exploited for control over confidential,
+  or personally identifiable information of customers or potential high privileges of adminstrators leading to misuse of power for personal gain
+
+-types of access controls
+  1. Vertical access controls - The privileges of an admin cannot be utilized by low-level users of the application
+  2. Horizontal access controls - The privileges set to a user cannot be utilized by another same-level user as it invokes the privacy of the user being exploited
+  3. Contextual access controls - This is when privileges for a user are set dynamically. Consider a cart consisting of some items, after payment if you remove an items it does 
+      not work as the item is already bought
+
+-types of access control security models
+  1. Role-based - Specific privileges given based on the role's responsibility
+  2. Discretionary-based - A user can share his privileges based off of permissions set to specific users
+  3. Mandatory - Based off of level of sensitivity a user if working at
+
+- types of vulnerabilities
+  1. URL manipulation (The base) - The name itself suggests that when a URL of website is modified to get privileges to an admin or other legitimate users without any authorization,
+      and if the application does not verify the access rights of that URL, then sensitive data can be retrieved/escalated privileges can be exploited by the attacker
+      
+      Example - If a website has a user access URL of website.com/user/123 and if the URL is modified to get admin user to acquire privileges by website.com/user/admin. And if the 
+      website does not check the authorization of the user to access this information then automatically it can be classified as the broken access control as the power of the user
+      admin can now be easily exploited by the this vulnerability which is not supposed to be possible in the first place
+
+      This vulnerability is mostly carried out in the URL, which is used to locate sub-domains of a website. And almost each functionality of the website is affected by this 
+      vulnerability by unsanitized acceptance of the user input at front-end, unauthorized retrieval of the URL resource at the back-end
+
+  2. Insecure Direct object references (IDOR) - Every application has some direct references to internal implementation objects and if they are exposed they can be exploited for 
+      broken access to resources without any admin rights
+
+      Example - Basically this is also URL manipulation. If a website exposes it's URL paths to file storage locations by website.com/viewfile?_file-no=123, then the attacker can 
+      potentially change the url to website.com/viewfile?_file-no=456 can if proper validation and authorization policies are not set then sensitive files are accessed by the 
+      attacker or website.com/deletefile?_file-no=456 which permanently deletes the file 456 without any authorization
+
+      This vulnerability is also mostly carried out in the URL of the website and can significantly affect all the functionalities of the website, the exploitation of unsanitized 
+      user input in the front-end, the non validated resource responses to the request at the back-end
+
+      Contains two object references: Iterable object identifier(these are simple sequential identifier which can be easily exploited by guessing the next identifier, ex: 123,456)
+      and Complex object identifier(which are hard to guess ex: 4f5e6d7c8b9a : mostly due to hashing)
+
+  3. Privilege escalation - A low-level user is given admin privileges by exploiting the above techniques to potentially blame the admin for the vulnerabilities or just exploit 
+      the privileges for personal gain. Not to much of a priority
+=============================================================================================
+---> A2 -- Cryptographics failures - This occurs when weaknesses in the implementation or use of cryptography lead to unintended exposure or alteration of sensitive information 
+  (most probably during transit)
+
+- types of cryptography
+  1. Encryption - converting a plain text into cipher text
+  2. Symmetric key encryption - converting a plain text into cipher text with the usage of a public key common to both the user in the transmission process and need to be kept a
+      secret as the convertion back to the plain text is also done by the same key
+  3. Asymmetric key encryption - converting a plain text into cipher text with the usage of a public key at sender's end and converting back into the plain text by the usage of a 
+      private key at receiver's end
+  4. Hashing - Creation of a fixed-size unique value called the hash-values for a given input or message by the uasge of some mathematical expressions
+
+- types of vulnerabilities
+  1. Insecure key management - 
