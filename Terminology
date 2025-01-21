@@ -7,3 +7,9 @@ Bug - error/flaw in a software which can lead to unexpected/unintended behaviour
 Clickjacking - overlaying an invisible page over a legitimate page UI redressing
 Exploit - taking advantage of a flaw to (most probably) deliver the malware to the target system
 Honeypot - A decoy system designed to attract potential attackers
+Proxy - A computer system which works as a hub for clients to forward requests to the server (basically acting on behalf of an actual computer system)
+Rootkit - Malware program designed to remain hidden on the target system
+Security operations centre(SOC) - org's security operations responsible to detect, respond and prevent any potential threats
+Threats - Possible means to exploit the vulnerabilities
+Vulnerabilities - Loopholes in the org's security posture (could be application, system or network)
+Virus - 
