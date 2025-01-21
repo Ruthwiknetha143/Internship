@@ -107,4 +107,57 @@ OWASP top 10 vulnerabilities as of 2021 are:
 7. Identification and authentication failures: Failed to confirm the user's identity, auth and session management
     __Caused by:
         - Permitted credential stuffing & brute forcing
-        - 
+        - Permitting default or weak passwords
+        - Ineffective credential recovery or Multi-factor authentication
+    __Impacts:
+        - Entire system compromise
+        - persistent system level threats
+        - Data theft
+    __Prevention:
+        - Implement weak password checks
+        - Implement rules for password creation
+        - limit login attempts
+        - Use better and well controlled recovery methods and MFAs
+
+8. Software and data integrity failures: A built code or infrastructure which does not protect against integrity violations i.e, code or infrastructure that is flawed but 
+    deployed which leads to usage of non-verified data/programs
+    __Caused by:
+        - using untrusted repos, CDNs
+        - auto update without integrity check
+        - structured encoding leading to finding patterns
+    __Impacts:
+        - Misguided decisions
+        - inefficient operations
+        - loss of competitive advantage
+    __Prevention:
+        - Usage of digital signatures to verify the authenticity
+        - Component dependency checks are need to be done
+        - Well-defined integrity verification process for code and infrastructure
+
+9. Security logging and monitoring failures: failure to monitor, detect, logging, escalate and respond to active breaches
+    __Caused by:
+        - Failure of efficient log storage such as storing logs locally, no logs created altogether
+        - Code/program failure to detect attacks in real-time
+        - Alerting system are not efficiently built
+    __Impacts:
+        - Data manipulation
+        - Difficulty in forensic analysis
+        - Delayed/Inability to detection of attacks
+    __Prevention:
+        - Efficient and shared log management with validated data
+        - Encoded logs to prevent leak during injections/BAC
+        - Effective monitoring with incident response and recovery team
+
+10. Server-side request forgery(SSRF): Targets the server and includes making request to the server-side with modified URL to unintended resources
+    __Caused by:
+        - Failure to sanitize/validate input
+        - Misconfigured proxies
+        - Inadequate logging and monitoring
+    __Impacts:
+        - Data exposure
+        - Internal network scanning
+        - Chaining attacks with RCE/XSS
+    __Prevention:
+        - Well configured firewalls (deny by default, logging all network flows)
+        - Using allow list with valid URL schema, port, and destination
+        - Disable HTTP redirections
