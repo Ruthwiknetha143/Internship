@@ -11,3 +11,6 @@ cve
 blackbox, graybox, whitebox testing
 
 IP ranges
+
+
+sources: portswigger.net, bugcrowd.com
