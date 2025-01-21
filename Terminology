@@ -1,0 +1,9 @@
+Basic terminologies required to be known:
+
+Backdoor - hidden method of bypassing security to gain access to authorized information
+Botnet - a group/network of devices affected by the common kind of malware
+Malware - acronym for malicious software (viruses, spyware, adware, ransomware) used to execute malicious programs or scripts on the targeted device
+Bug - error/flaw in a software which can lead to unexpected/unintended behaviour of that functionality
+Clickjacking - overlaying an invisible page over a legitimate page UI redressing
+Exploit - taking advantage of a flaw to (most probably) deliver the malware to the target system
+Honeypot - A decoy system designed to attract potential attackers
