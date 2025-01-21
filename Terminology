@@ -11,5 +11,6 @@ Proxy - A computer system which works as a hub for clients to forward requests t
 Rootkit - Malware program designed to remain hidden on the target system
 Security operations centre(SOC) - org's security operations responsible to detect, respond and prevent any potential threats
 Threats - Possible means to exploit the vulnerabilities
-Vulnerabilities - Loopholes in the org's security posture (could be application, system or network)
-Virus - 
+Vulnerabilities - Loopholes in the org's security system (could be application, system or network)
+Virus - A spreading malware via human interaction (basically a worm)
+Zero-day - previously unknown attack strtergies
