@@ -45,7 +45,8 @@
         text yield different cipher texts. An IV is integrated into the plain-text before encryption (XOR operation) and then sent to the encryption process. By this approach a 
         randomized plain text is encrypted and the cipher text is sent along with the initialization vector to the receiving end at which after decryption the output is XOR'ed 
         with the IV to get the true plain-text. It should be duly noted that every plain-text is given a different initialization vector and the vulnerability arises if these IVs
-        are predicted to be reused, or just simply incremented for every message and this could arise a vulnerability of the attacker making an educated guess about the plain-text structure
+        are predicted to be reused, or just simply incremented for every message and this could arise a vulnerability of the attacker making an educated guess about the plain-text 
+        structure
 
       - CWE-1241, 335, 336, 337, 338: RNGs and PRNGs - Random number generator and Pseudo-random number generator are typically used to create the values for the keypairs or the 
         initialization vectors. Basically RNGs used physical devices randomness to generate some random key number which can be used to create the keypairs or IV and PRNGs use 
