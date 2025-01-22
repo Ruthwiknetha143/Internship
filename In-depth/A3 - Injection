@@ -4,4 +4,4 @@
   Note - This type of attack is most probably carried out in application which have the usage of unsanitized user inputs i.e, user inputs which are not validated
 
   -types of vulnerabilities
-    1. Server-side injection - 
+    1. CWE-97: Server-side injection - 
