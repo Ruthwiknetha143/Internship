@@ -9,3 +9,5 @@
 
         + CWE-98: File inclusion - Using script to execute commands which can be used to include files in the web/application server for potentially remote code execution. There
           are two types of file inclusion vulnerabilities
+
+          - 
