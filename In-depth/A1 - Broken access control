@@ -13,8 +13,8 @@
   3. Mandatory - Based off of level of sensitivity a user if working at
 
 - types of vulnerabilities
-  1. URL manipulation (The base) - The name itself suggests that when a URL of website is modified to get privileges to an admin or other legitimate users without any authorization,
-      and if the application does not verify the access rights of that URL, then sensitive data can be retrieved/escalated privileges can be exploited by the attacker
+  1. CWE-939: URL manipulation (The base) - The name itself suggests that when a URL of website is modified to get privileges to an admin or other legitimate users without any 
+      authorization, and if the application does not verify the access rights of that URL, then sensitive data can be retrieved/escalated privileges can be exploited by the attacker
       
       Example - If a website has a user access URL of website.com/user/123 and if the URL is modified to get admin user to acquire privileges by website.com/user/admin. And if the 
       website does not check the authorization of the user to access this information then automatically it can be classified as the broken access control as the power of the user
@@ -23,8 +23,8 @@
       This vulnerability is mostly carried out in the URL, which is used to locate sub-domains of a website. And almost each functionality of the website is affected by this 
       vulnerability by unsanitized acceptance of the user input at front-end, unauthorized retrieval of the URL resource at the back-end
 
-  2. Insecure Direct object references (IDOR) - Every application has some direct references to internal implementation objects and if they are exposed they can be exploited for 
-      broken access to resources without any admin rights
+  2. CWE-639: Insecure Direct object references (IDOR) - Every application has some direct references to internal implementation objects and if they are exposed they can be 
+      exploited for broken access to resources without any admin rights
 
       Example - Basically this is also URL manipulation. If a website exposes it's URL paths to file storage locations by website.com/viewfile?_file-no=123, then the attacker can 
       potentially change the url to website.com/viewfile?_file-no=456 can if proper validation and authorization policies are not set then sensitive files are accessed by the 
@@ -36,5 +36,5 @@
       Contains two object references: Iterable object identifier(these are simple sequential identifier which can be easily exploited by guessing the next identifier, ex: 123,456)
       and Complex object identifier(which are hard to guess ex: 4f5e6d7c8b9a : mostly due to hashing)
 
-  3. Privilege escalation - A low-level user is given admin privileges by exploiting the above techniques to potentially blame the admin for the vulnerabilities or just exploit 
-      the privileges for personal gain. Not to much of a priority
+  3. CWE-250, 265, 269: Privilege escalation - A low-level user is given admin privileges by exploiting the above techniques to potentially blame the admin for the 
+      vulnerabilities or just exploit the privileges for personal gain. Not to much of a priority
