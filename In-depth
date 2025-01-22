@@ -51,4 +51,45 @@
   4. Hashing - Creation of a fixed-size unique value called the hash-values for a given input or message by the uasge of some mathematical expressions
 
 - types of vulnerabilities
-  1. Insecure key management - 
+  1. Insecure key management - Keys are the main tools which are used to encrypt and decrypt the messages during transmission. And to acquire such key with maximum entorpy and
+      uniqueness, organizations generally approach a certificate authority to apply for a certificate. After careful consideration a certificate is presented to the organization 
+      which consists of keys (symmetric/asymmetric) which can be used for the encryption and decryption purpose and if these keys are not managed securely then a major security
+      threat can emerge. There are 2 main types of Insecure key management
+
+      - Key reuse - certificate authorities tend to publish the same keys which are already being used by an organization or previously used or is revoked or comprimised. This is
+        done to save on storage space for new keys but can be serious threat if attackers get to know about the publishing of the same keys. They can decode the encryption process
+        and decrypt the transmitting messages while transmission, this can be a serious security and privacy risk
+
+      - Insecure key generation - Alongside the vulnerability of using the same keys for the algorithms, if the keys are not generated random enough by the certificate authority,
+        then this can also lead to predictable encryption process which can be used as leverage by the attackers to predict the decryption process. This kind of generation is 
+        done by the certificate authorities to save up on the storage space of the keys by measures like creating fixed-size random keys, etc.
+
+      This kind of vulnerability is basically the fault of the certificate authorities who issue this keys as it is their ignorance/unwillingness to store keys which can lead to 
+      catastrophic incidence. And a bit of fault can also be imposed upon the organization who buy this certificates and do not understand or recognize the repeating pattern to take
+      appropriate measures against these vulnerabilities
+
+  2. Broken cryptography - Usage of weak, outdated cryptographic algorithms can lead to easier prediction of the decryption process which can lead to data leakage, some of the old  
+      cryptographic algorithms like RC2, MD4, MD5, SHA1 are old, weak and outdated algorithms and if used by the organization can lead to easier prediction of the decryption process
+      by the attackers
+
+      Example - SHA1 a deprecated hashing algorithm, if used can be exploited by using a technique called collision, basically SHA1 hashing algorithm creates a digest or hash value
+      which can be used to prove the authenticity of the document in the question and in SHA1 a bad document can be carefully crafted to produce the same hashing value as the good
+      document and this is a serious threat as a good contract can be intercepted and hashed with a bad contract for personal gains.
+
+      The fault of this vulnerability to exist in of the frontend development, as not using latest, updated and trusted cryptographic algorithms is mainly affecting the actual 
+      connection or transmission of data in frontend-level from one client to another. This vulnerability is mainly exploited during the transmission of data by man-in-the-middle
+      attack
+
+  3. Insufficient entropy - Basically insufficient randomness. And there are some affected function which include
+
+      - Predictable initialization vector(IV) - IV are used to create a randomness to the text being encrypted to make sure that repeated encryption of the same text yield different
+        cipher texts. An IV is integrated into the plain-text before encryption (XOR operation) and then sent to the encryption process. By this approach a randomized plain text is
+        encrypted and the cipher text is sent along with the initialization vector to the receiving end at which after decryption the output is XOR'ed with the IV to get the true
+        plain-text. It should be duly noted that every plain-text is given a different initialization vector and the vulnerability arises if these IVs are predicted to be reused,
+        or just simply incremented for every message and this could arise a vulnerability of the attacker making an educated guess about the plain-text structure
+
+      - RNGs and PRNGs - Random number generator and Pseudo-random number generator are typically used to create the values for the keypairs or the initialization vectors. Basically
+        RNGs used physical devices randomness to generate some random key number which can be used to create the keypairs or IV and PRNGs use mathematical expressions to generate
+        the random numbers by the usage of a seed(which is an anchor such as system time, random value etc). And in RNG, if insufficient entropy is detected from physical devices 
+        or limited devices are used to generate the numbers, then it may lead to a vulnerability of guessing the next RNG generation and in the case of PRNG, if the seed are to be 
+        reused then the next PRNG generated values can be predicted which is a serious threat to the keypair values and the IVs being generated by the help of them
