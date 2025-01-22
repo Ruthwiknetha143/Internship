@@ -106,3 +106,7 @@
 ---> A3 -- Injection - Injection vulnerability is a security flaw that allows an attacker to insert or "inject" malicious code or commands into a program or system, leading to 
   unintended behavior, data exposure, or unauthorized access
 
+  Note - This type of attack is most probably carried out in application which have the usage of unsanitized user inputs i.e, user inputs which are not validated
+
+  -types of vulnerabilities
+    1. Server-side injection - 
