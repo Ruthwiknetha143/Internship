@@ -4,4 +4,8 @@
   Note - This type of attack is most probably carried out in application which have the usage of unsanitized user inputs i.e, user inputs which are not validated
 
   -types of vulnerabilities
-    1. CWE-97: Server-side injection - 
+    1. CWE-97: Server-side injection - Usage of unsanitized input of an application to retrieve confidential/sensitive data in bulk from the server itself. There are many types of
+        server-side injection techniques. Some of the most notable ones are
+
+        + CWE-98: File inclusion - Using script to execute commands which can be used to include files in the web/application server for potentially remote code execution. There
+          are two types of file inclusion vulnerabilities
