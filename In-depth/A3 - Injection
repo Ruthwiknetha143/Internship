@@ -26,4 +26,4 @@
           expose the tables being stored, all the confidential/sensitive information such as usernames and passwords. And if too weak, then even custom queries can be used to 
           include arbitrary code to exploit this weakness. Example: SELECT * FROM users WHERE username = '' OR 1=1;
 
-        + CWE-91, 611: 
+        + CWE-77, 78: Command injection -  
