@@ -1,1 +1,5 @@
----> A4 -- Insecure design - 
+---> A4 -- Insecure design - It refers to the lack of security controls and considerations in the architecture and design of a system, leading to vulnerabilities that can be 
+  exploited by attackers
+
+-types of vulnerabilities
+  1. CWE-259, 798: Hardcoded credentials - 
