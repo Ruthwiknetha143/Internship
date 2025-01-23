@@ -5,5 +5,17 @@
   1. Insecure OS/Firmware - Usage of default of OS builds/firmware or insecure practices done on an OS can lead to many vulnerabilities which can lead to BAC, Injection attacks,
       data breaches, etc
 
-      Some of the most common vulnerabilities caused/leveraged by this issue are CWE-259, 798 (Hardcoded credentials), CWE-732 (Over permissioned credentials), Local administrator
-      on default environment, unvalidated firmware updates (maybe unencrypted as well), CWE-922, 255, 1273 (shared credentials on the storage),  
+      Some of the most common vulnerabilities caused/leveraged by this issue are CWE-259, 798: Hardcoded credentials, CWE-732: Over permissioned credentials, Local administrator
+      on default environment, unvalidated firmware updates (maybe unencrypted as well), CWE-922, 255, 1273: shared credentials on the storage
+
+  2. CWE-922: Insecure data storage - self-explanatory, but some of the key points which are used to categorize into this vulnerability are
+
+      CWE-200: Sensitive data stored in unencrypted from on external storage, CWE-312: Server-side storage of sensitive data in plain-text, CWE-524, 525: caching of sensitive 
+      information
+
+  3. Insecure data transport - Transmission of data through an application in an insecure format some of the key points are
+
+      CWE-353, 494: No secure integrity check for an executable download, CWE-319: Cleartext transmission of sensitive information
+
+  All of this vulnerabilities are due to the ignorance of the entire development front-end, back-end and database. And all of these vulnerabilities can be exploited by the usage 
+  of before mentioned techniques i.e, injection techniques, packet-sniffing, man-in-the-middle attack, etc
