@@ -1,48 +1,7 @@
 ---> A5 -- Security Misconfiguration - It refers to the improper setup of security controls and settings in an application, server, or database, which can lead to vulnerabilities 
   and expose sensitive data or functionality to unauthorized access
 
+-types of vulnerabilities
+  1. Server security misconfiguration - The act of misconfiguring setting at the server-side which can lead to data breaches ans possibly system compromise
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      + 
