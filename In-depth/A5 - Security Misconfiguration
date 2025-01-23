@@ -4,4 +4,10 @@
 -types of vulnerabilities
   1. Server security misconfiguration - The act of misconfiguring setting at the server-side which can lead to data breaches ans possibly system compromise
 
-      + 
+      + Usage of default credentials - This can lead to easier decoding of admin password by brute forcing at low-level
+
+      + Server-side request forgery - refer to A10 in this folder (in-depth) for information
+
+      + OAuth misconfiguration - OAuth (Open authorization) is a authentication framework which allow limited access to their version application without exposing credentials 
+        (Basically authorization without credentials - Single Sign-On service). Attacks like cross-site request forgery can be exhibited by this vulnerability which can lead to
+        sensitive data leak
