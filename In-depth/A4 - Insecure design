@@ -2,4 +2,8 @@
   exploited by attackers
 
 -types of vulnerabilities
-  1. CWE-259, 798: Hardcoded credentials - 
+  1. Insecure OS/Firmware - Usage of default of OS builds/firmware or insecure practices done on an OS can lead to many vulnerabilities which can lead to BAC, Injection attacks,
+      data breaches, etc
+
+      Some of the most common vulnerabilities caused/leveraged by this issue are CWE-259, 798 (Hardcoded credentials), CWE-732 (Over permissioned credentials), Local administrator
+      on default environment, unvalidated firmware updates (maybe unencrypted as well), CWE-922, 255, 1273 (shared credentials on the storage),  
