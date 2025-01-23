@@ -19,11 +19,42 @@
         Most of this inclusions are done via path paramaters and is considered a vulnerability related to the backend development as the servers are at fault for not validating
         the given URL parameter inputs and executing them as it is which are leading to this unwanted execution and potential data breaches
 
-    2. CWE-94: Remote code execution/Code injection - It is the usage of unsanitized inputs to include commands or queries which can retrieve sensitive data or can implement 
-        arbitrary code execution on the target system. Some of the common methods for RCE are
+        + CWE-94: Remote code execution/Code injection - It is the usage of unsanitized inputs to include commands or queries which can retrieve sensitive data or can implement 
+          arbitrary code execution on the target system. Some of the common methods for RCE are
 
         + CWE-89: SQL injection - In an input widget if we were to give SQL queries and the unsanitized vulnerabilities helps to get by and the execution of this queries can 
           expose the tables being stored, all the confidential/sensitive information such as usernames and passwords. And if too weak, then even custom queries can be used to 
-          include arbitrary code to exploit this weakness. Example: SELECT * FROM users WHERE username = '' OR 1=1;
+          include arbitrary code to exploit this weakness. Example - SELECT * FROM users WHERE username = '' OR 1=1;
 
-        + CWE-77, 78: Command injection -  
+        + CWE-77, 78: Command injection - Able to execute arbitrary code on the target's operating system also comes under OS command injection
+          Example - ls, cd, dir, rm, chmod, mv
+
+        + CWE-90: LDAP injection - Lightweight directory access protocol is a centralized authentication protocol between the user and the organization. Usage of unsanitized 
+          LDAP queries to modify the access permissions is LDAP injection
+          Example - (&(user=*)(|(password=*)) to bypass authentication
+
+        + CWE-91, 611: XML/XPath injection - Both of these injection techniques are used to target the XML data of the applications. XML data is a markup language used to carry
+          data for data management. XML parser queries can be injected to potentially read the contents of the XML file(XML injection) or Using XPath queries to tamper with the
+          information available in the XML data to mislead the forensic analysis
+
+        All of this injection methods are exploited either in the URL parameter or the input widgets of the application/website and the fault lies within the backend development
+        as they are the ones responsible for the acceptance of the unsanitized inputs in the first place which lead to the exploitation of several commands or codes to be given
+        as input which can be exploited
+
+    2. CWE-602: Client-side injection - Usage of unsanitized inputs to retrieve confidential/sensitive data locally on user's browser itself not affecting the server entirely is
+        client-side injection (No execution). Techniques in client-side injection are
+
+        + CWE-79: Cross-site scripting(XSS) - sending potentially malicious Javascript code/command to execute in the browser or potentially another user's browser is XSS.
+          Example - <script>alert('1');</script>
+
+        + CWE-451: Content spoofing - attackers manipulate web content to display fraudulent information, often mimicking legitimate sources. Some of the techniques used for this
+          purpose are
+
+          - CWE-80: HTML injection - Basic XSS attack type
+            Example - <a href="http://malicious-site.com">Click here</a>
+
+          - CWE-1021: iframe injection - Same as html injection but using iframe tag to simulate a malicious UI on a legitimate website
+            Example - <iframe src=”http://malicious/web.html” width=1 height=1 style=”visibility:hidden;position:absolute”></iframe>
+
+        These types of vulnerabilities are mostly carried out in the input widgets of the application/website and can be blamed upon the frontend development due to the incorrect
+        configuration of the widgets to accept any type of data being entered
