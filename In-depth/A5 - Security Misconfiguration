@@ -12,5 +12,4 @@
         (Basically authorization without credentials - Single Sign-On service). Attacks like cross-site request forgery can be exhibited by this vulnerability which can lead to
         sensitive data leak
 
-      + Misconfigured DNS - When a DNS cache storage system or the general retrieval does not get configured well then it can lead to catastrophic loopholes which can be exploited
-        for any sort of personal gains
+      + Misconfigured DNS - 
