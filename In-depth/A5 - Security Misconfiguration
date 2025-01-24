@@ -11,4 +11,5 @@
       + OAuth misconfiguration - OAuth (Open authorization) is a authentication framework which allow limited access to their version application without exposing credentials 
         (Basically authorization without credentials - Single Sign-On service). Attacks like cross-site request forgery can be exhibited by this vulnerability which can lead to
         sensitive data leak
+
       + Misconfigured DNS - 
