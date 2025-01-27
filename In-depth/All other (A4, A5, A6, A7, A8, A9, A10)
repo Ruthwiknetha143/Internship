@@ -18,7 +18,8 @@
       CWE-353, 494: No secure integrity check for an executable download, CWE-319: Cleartext transmission of sensitive information
 
   All of this vulnerabilities are due to the ignorance of the entire development front-end, back-end and database. And all of these vulnerabilities can be exploited by the usage 
-  of before mentioned techniques i.e, injection techniques, packet-sniffing, man-in-the-middle attack, etc
+  of before mentioned techniques i.e, injection techniques, packet-sniffing, man-in-the-middle attack, etc, and it effects User input validation, session management, data flow
+  analysis
 ==================================================================================================================================================================================
 ---> A5 -- Security Misconfiguration - It refers to the improper setup of security controls and settings in an application, server, or database, which can lead to vulnerabilities 
   and expose sensitive data or functionality to unauthorized access
@@ -33,9 +34,12 @@
       + OAuth misconfiguration - OAuth (Open authorization) is a authentication framework which allow limited access to their version application without exposing credentials 
         (Basically authorization without credentials - Single Sign-On service). Attacks like cross-site request forgery can be exhibited by this vulnerability which can lead to
         sensitive data leak
+      + Unpatched flaws
+        Default configurations
+        Unused pages and services
+        Exposed sensitive files and directories
 
-      + Misconfigured DNS - 
-
+      These can effect server settings, application configurations
 ==================================================================================================================================================================================
 ---> A6 -- Vulnerable and outdated components - It refers the use of software libraries, frameworks, or modules that are outdated or contain known security vulnerabilities, 
   increasing the risk of exploitation in applications
