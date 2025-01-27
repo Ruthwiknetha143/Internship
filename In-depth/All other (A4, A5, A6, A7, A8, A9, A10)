@@ -40,10 +40,14 @@
 ---> A6 -- Vulnerable and outdated components - It refers the use of software libraries, frameworks, or modules that are outdated or contain known security vulnerabilities, 
   increasing the risk of exploitation in applications
 ==================================================================================================================================================================================
----> A7 -- Identification and authentication failures - 
+---> A7 -- Identification and authentication failures - It refers to security weaknesses that occur when an application improperly manages user identities and authentication 
+  processes, leading to unauthorized access or account compromise
 ==================================================================================================================================================================================
----> A8 -- Software and Data integrity failures -
+---> A8 -- Software and Data integrity failures - It refers to security issues arising from the lack of proper validation and integrity checks on software updates and data,
+  allowing the introduction of unauthorized or malicious changes
 ==================================================================================================================================================================================
----> A9 -- Security logging and monitoring failures -
+---> A9 -- Security logging and monitoring failures - It refers to inadequate logging and monitoring of security events, which hinders the ability to detect, respond to, and 
+  investigate security incidents effectively
 ==================================================================================================================================================================================
----> A10 -- Server-side request forgery -
+---> A10 -- Server-side request forgery - It refers to a web security vulnerability that allows an attacker to trick a server into making unintended requests to internal or 
+  external resources
