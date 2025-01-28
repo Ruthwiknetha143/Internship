@@ -54,6 +54,11 @@
   1. Outdated library versions are being used, such as 'package.json'
 
   2. Default file dependencies such as requirements.txt
+
+  - Libraries
+  - Frameworks
+  - Software versions
+  - Patches & updates
 ==================================================================================================================================================================================
 ---> A7 -- Identification and authentication failures - It refers to security weaknesses that occur when an application improperly manages user identities and authentication 
   processes, leading to unauthorized access or account compromise
@@ -62,6 +67,12 @@
   1. Login parameters
 
   2. Session management tokens
+
+  - User credentials
+  - Authentication tokens
+  - Sessions
+  - Password storage
+  - Account lockout settings
 ==================================================================================================================================================================================
 ---> A8 -- Software and Data integrity failures - It refers to security issues arising from the lack of proper validation and integrity checks on software updates and data,
   allowing the introduction of unauthorized or malicious changes
@@ -70,6 +81,12 @@
   1. Data validation parameters
 
   2. Update mechanisms
+
+  - Code and software updates
+  - Data storage
+  - Transmission channels
+  - Digital signatures
+  - Hash functions
 ==================================================================================================================================================================================
 ---> A9 -- Security logging and monitoring failures - It refers to inadequate logging and monitoring of security events, which hinders the ability to detect, respond to, and 
   investigate security incidents effectively
@@ -78,6 +95,11 @@
   1. Log files
 
   2. Monitoring parameters
+
+  - Log files
+  - Event tracking systems
+  - Monitoring tools
+  - Alerts & notifications
 ==================================================================================================================================================================================
 ---> A10 -- Server-side request forgery - It refers to a web security vulnerability that allows an attacker to trick a server into making unintended requests to internal or 
   external resources
@@ -86,3 +108,8 @@
   1. Internal API endpoints
 
   2. User input for URLS
+
+  - Internal servers
+  - External APIs
+  - Request parameters
+  - Metadata services (e.g., AWS)
