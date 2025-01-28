@@ -21,6 +21,7 @@
   of before mentioned techniques i.e, injection techniques, packet-sniffing, man-in-the-middle attack, etc, and it effects User input validation, session management, data flow
   analysis
 
+  Parameters:
   - Access control settings
   - Session tokens
   - Input fields
@@ -55,6 +56,7 @@
 
   2. Default file dependencies such as requirements.txt
 
+  Parameters
   - Libraries
   - Frameworks
   - Software versions
@@ -68,6 +70,7 @@
 
   2. Session management tokens
 
+  Parameters
   - User credentials
   - Authentication tokens
   - Sessions
@@ -82,6 +85,7 @@
 
   2. Update mechanisms
 
+  Parameters
   - Code and software updates
   - Data storage
   - Transmission channels
@@ -96,6 +100,7 @@
 
   2. Monitoring parameters
 
+  Parameters
   - Log files
   - Event tracking systems
   - Monitoring tools
@@ -109,6 +114,7 @@
 
   2. User input for URLS
 
+  Parameters
   - Internal servers
   - External APIs
   - Request parameters
