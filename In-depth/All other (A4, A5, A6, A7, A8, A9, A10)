@@ -119,3 +119,5 @@
   - External APIs
   - Request parameters
   - Metadata services (e.g., AWS)
+==================================================================================================================================================================================
+Basically all of these vulnerabilities are going to cause the opening to the top 3 vulnerabilities only...
