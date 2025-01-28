@@ -20,6 +20,12 @@
   All of this vulnerabilities are due to the ignorance of the entire development front-end, back-end and database. And all of these vulnerabilities can be exploited by the usage 
   of before mentioned techniques i.e, injection techniques, packet-sniffing, man-in-the-middle attack, etc, and it effects User input validation, session management, data flow
   analysis
+
+  - Access control settings
+  - Session tokens
+  - Input fields
+  - Business flow logic
+  - User permissions
 ==================================================================================================================================================================================
 ---> A5 -- Security Misconfiguration - It refers to the improper setup of security controls and settings in an application, server, or database, which can lead to vulnerabilities 
   and expose sensitive data or functionality to unauthorized access
