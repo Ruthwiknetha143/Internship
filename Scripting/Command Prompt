@@ -1,5 +1,191 @@
---> ]Command prompt - It is CLI interface used to work with the resources or folders or files of the windows OS(only)
-  .bat files can be created which are batch scripts used to execute the cmd command in one go basically automation
+--> Command prompt - It is CLI interface used to work with the resources or folders or files of the windows OS(only)
+  .bat files can be created which are batch scripts used to execute a set of cmd commands in one go (basically automation)
 
 -Basic cmd commands:
   1. Navigation
+      + dir : lists the folders and files in the current working folder - dir
+              to show hidden files and folders - dir /a
+              list folders and files from certain directories - dir <directory_path>
+
+      + cd : used to change/switch between directories
+             to go to specific directory path - cd <directory_path>
+             to move back from the current working directory - cd .. 
+             as well to go back certain number of directories - cd../../..
+             to go the starting of the disc you are in - cd \
+             displays the current working directory - cd
+
+      + tab : this is a key in your keyboard which helps to auto-complete files/folders by typing one to two word and pressing tab or just go through every file by pressing tab as 
+        well
+
+      + tree : displays the dendogramic structure of the file and folder storage
+
+      + mkdir : to make/create directories - mkdir <directory_name>
+                Can also create multiple directories by giving space
+
+      + creating a file : to create any type of file in a directory - cd .> <file_name>
+                          creation of a file with some message written inside the file - echo <content> >> <file_name>
+
+      + preview of the file : to preview the contents of the file in the cmdlet - type <file_name>
+                              can also be used for multiple files
+
+      Note - Just typing the file name will either execute it or open it in a notepad (depending on the filetype)
+
+      + rename: to rename any file/directory and can also be used to change the extensions of the files - rename <old_name> <new_name>
+
+      + deletion: different types of commands can be used to deletion of files/directories
+                  temporary deletion - del <file_name> 
+                  permanent deletion - erase <file_name> (comes with a prompt Y/N)
+                  specific directory - del <directory_path> (you can specify the file/not specifying deletes the entire files in the directory)
+                  can also be used with multiple files
+                  to delete a folder - rmdir <directory_name> (use extras commands for easier deletion)
+
+      + copy : to copy a file into a directory - copy <file_name> <directory_path>
+
+      + move : to move a file into a directory - move <file_name> <directory_path>
+
+  2. Extras
+      + no prompts : to executes a command without Y/N - /Q
+
+      + look within directories - /S (only files), /D (only directories)
+
+      + cls : used to wipe out the current instance of the cmdlet giving you a clean slate but retains command history until the instance is terminated
+
+      + esc : key in the keyboard used to delete the current command in the cmd (basically ctrl + A + backspace)
+
+      + Navigation between the history of command - arrom up and down
+
+      + findstr : to find specific string of characters - <any-command> | findstr <the_query>
+
+      + clip : to copy the output to the clipboard - <any_command> | clip
+
+      + pause : used to stop the cmd. Press any key to continue.....
+
+      + running multiple command in the cmdlet - <any_command> & <any_command>
+
+      + help on a command - <any_command> /?
+
+      + exit - to terminate the current instance of the cmdlet
+
+  3. Start
+      + start another instance of cmd - start
+
+      + open the file explorer with current working dir - start .
+
+      + prev dir - start ..
+
+      + program launching : start <application>
+
+      + special commands for browser : start <browser> <domain_name>
+                                       start <browser> --new-window (--incognito/--inPrivate) <domain_name>
+
+  4. System commands
+      + systeminfo - retrieves the info of the system
+
+      Note : WMIC for greater control
+
+      + Booting : this commands are used to manage the shutdown functionality of the windows OS
+                  shutdown with a 30 second time delay - shutdown -s
+                  restart - shutdown -r
+                  shutdown with a specified time - shutdown -s -t 3600 (only seconds)
+                  shutdown operation via GUI - shutdown -i
+                  abort booting - shutdown -a
+                  forcefully closing all applications and sign out - shutdown -f
+                  BIOS restart - shutdown /r /fw
+
+  5. Networking
+      + tcp/ip information :
+            ipconfig - basic network information
+            ipconfig /all - complete network information
+            ipconfig /displaydns - cached domains
+            ipconfig /flushdns - erase all the cached domains
+            ipconfig /release or ipconfig /renew - troubleshooting internet
+
+      + MAC address information : to retrieve MAC address information - getmac /v
+
+      + DNS information : to get the DNS information for the requested site - nslookup <domain_name>
+
+      + connected domains : to retrieve all the IP addresses this device is connected to - netstat
+                            to speed up the process - netstat -n
+
+      + packet returning : pinging a website to cross-check connection establishment and retrieval of packets - ping <domain_name>
+
+  6. Managing applications
+      + installing programs: to install some applications via cmd - winget install <application>
+
+      + list installed : to list all the applications already installed in the system - winget list
+                         to get specific results in the list - winget list --name <query> or winget list --id <id>
+
+      + uninstalling : to uninstall an application - winget uninstall --id <application_id>
+
+      + upgrading : to upgrade all the installed software - winget upgrade
+
+  7. Task manager
+      + listing : to list all the processes currently running in the system - @tasklist
+                  to list specific process by a string - @tasklist | findstr <process_name>
+
+      + deletion : to terminate a process - taskkill /f /pid <pid> or taskkill /f /im <p_name> (/f - force termination)
+                                            /pid - process id         /im - image name
+
+  8. Customization
+      + heading : to change the title of the current instance of the cmdlet - title <new_name>
+
+      + prompt : to change the prompt arrow in the cmdlet - prompt <new_prompt arrow>
+
+      + changing colors : to change the color of the text being entered - color <color_code>
+                          to change the background color of the cmdlet - color <color_code>f/b
+
+  9. Cryptography
+      + encryption - cipher /e <file/directory_name>
+
+      + decryption - cipher /d <file/directory_name>
+
+  10. Accessibility
+
+      attrib <+/-> <R/A/S/H> <path_name/file_name>
+
+      Here, + - add the attribute to the file
+            - - deducts the attribute to the file
+            R - read-only
+            A - archive file
+            S - system file
+            H - hidden attribute
+
+      + creation of a secured folder in which only content can be moved but not deleted edited or anything - mkdir aux\
+          aux\ - auxiliary directory can only be removed by rmdir
+
+  11. Permissions
+
+      cacls <file/directory_name> /P <everyone/user>:<flag>
+
+      comes with a prompt (Y/N)
+      Here, flags are n - none
+                      r - read-only
+                      c - change (read and write)
+                      f - full control (even deletion)
+
+  12. Users
+      + list : to retrieve a list of all the users on the current system - net user
+
+      + to change the password for a user - net user <username> <password>
+        to change the password in secret - net user <username> * (continued by prompts for new password creation)
+
+  13. CMD Postman
+      + GET request - curl <domain_name>
+                      even works for JSON/API
+
+      + HEAD request - curl <domain_name> -I
+
+  14. Scripting
+      + Invisible echo : to turn off the displaying of the echo statement - @echo off
+
+      + variable creation - set <variable_name>=123/any string
+
+      + variable call - echo %<variable_name>%
+
+      + Arithmetic operation - /a
+
+      + argument passing - set <variable_name>=%1 (1st input)
+                           set <variable_name>=%2 (2nd input)
+                           in execution - 1.bat <1st_input> <2nd_input>
+
+      conditions, loops, and goto(for errors)
