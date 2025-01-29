@@ -1,0 +1,5 @@
+--> ]Command prompt - It is CLI interface used to work with the resources or folders or files of the windows OS(only)
+  .bat files can be created which are batch scripts used to execute the cmd command in one go basically automation
+
+-Basic cmd commands:
+  1. Navigation
