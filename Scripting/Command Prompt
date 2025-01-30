@@ -1,6 +1,8 @@
 --> Command prompt - It is CLI interface used to work with the resources or folders or files of the windows OS(only)
   .bat files can be created which are batch scripts used to execute a set of cmd commands in one go (basically automation)
 
+- For admin open - ctrl + shift + enter (while typing the run window)
+
 - Commands:
   1. Navigation
       + dir : lists the folders and files in the current working folder - dir
