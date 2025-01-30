@@ -68,6 +68,10 @@
 
       + exit - to terminate the current instance of the cmdlet
 
+      + delay - to delay a specific amount of seconds after execution of a command (in batch file) - timeout <time> or timeout /t <seconds>
+                                                                                                     (can be interrupted by a user input)
+                to delay without any interruption - timeout /nobreak <seconds>
+
   3. Start
       + start another instance of cmd - start
 
