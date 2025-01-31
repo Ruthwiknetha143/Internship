@@ -1,2 +1,5 @@
----> Powershell - is a task automation and configuration management framework from Microsoft, featuring a command-line shell and an object-oriented scripting language. PowerShell is a 
-  cross-platform task automation solution that combines a command-line shell, a scripting language, and a configuration management framework
+---> Powershell - It is a cross-platform task automation solution that combines a command-line shell, a scripting language, and a configuration management framework
+
+- To check the version of the powershell - $PSVersionTable.PSVersion
+
+- cmd "echo" equivalent - Write-Host <message>
