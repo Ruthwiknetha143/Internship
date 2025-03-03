@@ -1,5 +1,8 @@
 ---> Bash (Bourne Again SHell) - It is a developed version of Bourne shell which is mainly used in UNIX based/LINUX based kernals to interact with the hardware of the
   Operating system
 
+- Always start the script with a shebang --> !#/bin/bash
+- shebang allows for the usage of bash language in the the file being created
+
 - Command:
   + 
