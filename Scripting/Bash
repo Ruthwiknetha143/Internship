@@ -24,8 +24,8 @@ Note: There are several in-build variables such as $SHELL, $RANDOM, $PWD, which 
 
   + TEST OPERATORS
 
-    ==============================================================================================
-    |  Integers                                    |  Strings
+    Integers - -eq, -ne, -lt, -le, -gt, -ge [ <= and >= used in (()) ]
+    Strings - =, ==, !=, >, <, -Z(null), -n(not-null)
 
 - Conditional statements:
   + IF STATEMENT
