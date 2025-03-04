@@ -22,3 +22,8 @@ Note: There are several in-build variables such as $SHELL, $RANDOM, $PWD, which 
     else
           //statement
     fi
+
+  + && - AND
+    || - OR
+
+  + >,<,>=,<=,==(str),-eq(int) - comparision operators
