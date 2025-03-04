@@ -18,7 +18,7 @@ Note: There are several in-build variables such as $SHELL, $RANDOM, $PWD, which 
   + $(()) - Always be sure to cover your arithmetic operations in this parenthesis for the shell to interpret that there is arithmetic operation going on
 
   + IF STATEMENT
-
+    ____________
     if [[ <variable> == <some_variable/input> ]]; then              
           //statement
     else
@@ -26,14 +26,14 @@ Note: There are several in-build variables such as $SHELL, $RANDOM, $PWD, which 
     fi
 
   + NESTED IF
-
+    _________
     if [[ //same ]]; then
           if [[ //same ]]; then
                 //statement
           fi
 
   + ELSE-IF STATEMENT
-
+    _________________
     if [[ //same ]]; then
           //statement
     elif [[ //same ]]; then
@@ -41,6 +41,18 @@ Note: There are several in-build variables such as $SHELL, $RANDOM, $PWD, which 
     else
           //statement
     fi
+
+  + SWITCH CASE
+    ___________
+    case $<input_variable> in
+          <input_1>)
+                    //statements
+                    ;;
+          <input_2>)
+                    //statements
+                    ;;
+          //so on (for your number of choices)
+    esac
 
   + LOGICAL OPERATORS
 
