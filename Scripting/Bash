@@ -22,7 +22,10 @@ Note: There are several in-build variables such as $SHELL, $RANDOM, $PWD, which 
     && - AND
     || - OR
 
-  + >, <, >=, <=, ==(str), -eq(int) - comparision operators
+  + TEST OPERATORS
+
+    ==============================================================================================
+    |  Integers                                    |  Strings
 
 - Conditional statements:
   + IF STATEMENT
