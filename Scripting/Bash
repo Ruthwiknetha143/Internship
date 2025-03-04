@@ -17,13 +17,34 @@ Note: There are several in-build variables such as $SHELL, $RANDOM, $PWD, which 
 - Arithmetic operations:
   + $(()) - Always be sure to cover your arithmetic operations in this parenthesis for the shell to interpret that there is arithmetic operation going on
 
-  + if [[ <variable> == <some_variable/input> ]]; then              Nested - if [[ //same ]]; then
-          //statement                                                              if[[ //same ]]; then
-    else                                                                                 //statement
-          //statement                                                              fi
+  + IF STATEMENT
+
+    if [[ <variable> == <some_variable/input> ]]; then              
+          //statement
+    else
+          //statement
     fi
 
-  + && - AND
+  + NESTED IF
+
+    if [[ //same ]]; then
+          if [[ //same ]]; then
+                //statement
+          fi
+
+  + ELSE-IF STATEMENT
+
+    if [[ //same ]]; then
+          //statement
+    elif [[ //same ]]; then
+          //statement
+    else
+          //statement
+    fi
+
+  + LOGICAL OPERATORS
+
+    && - AND
     || - OR
 
-  + >,<,>=,<=,==(str),-eq(int) - comparision operators
+  + >, <, >=, <=, ==(str), -eq(int) - comparision operators
