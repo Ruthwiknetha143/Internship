@@ -12,4 +12,4 @@
 Note: There are several in-build command such as $SHELL, $RANDOM, $PWD, which can be used as well for the scripting
 
 - Arithmetic operations:
-  + !(()) - Always be sure to cover your arithmetic operations in this parenthesis for the shell to interpret that there is arithmetic operation going on
+  + $(()) - Always be sure to cover your arithmetic operations in this parenthesis for the shell to interpret that there is arithmetic operation going on
