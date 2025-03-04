@@ -17,6 +17,14 @@ Note: There are several in-build variables such as $SHELL, $RANDOM, $PWD, which 
 - Arithmetic operations:
   + $(()) - Always be sure to cover your arithmetic operations in this parenthesis for the shell to interpret that there is arithmetic operation going on
 
+  + LOGICAL OPERATORS
+
+    && - AND
+    || - OR
+
+  + >, <, >=, <=, ==(str), -eq(int) - comparision operators
+
+- Conditional statements:
   + IF STATEMENT
     ____________
     if [[ <variable> == <some_variable/input> ]]; then              
@@ -54,9 +62,5 @@ Note: There are several in-build variables such as $SHELL, $RANDOM, $PWD, which 
           //so on (for your number of choices)
     esac
 
-  + LOGICAL OPERATORS
-
-    && - AND
-    || - OR
-
-  + >, <, >=, <=, ==(str), -eq(int) - comparision operators
+- Looping statements:
+  +
