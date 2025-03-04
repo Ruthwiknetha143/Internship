@@ -15,3 +15,9 @@ Note: There are several in-build variables such as $SHELL, $RANDOM, $PWD, which 
 
 - Arithmetic operations:
   + $(()) - Always be sure to cover your arithmetic operations in this parenthesis for the shell to interpret that there is arithmetic operation going on
+
+  + if [[ <variable> == <some_variable/input> ]]; then
+          //statement
+    else
+          //statement
+    fi
