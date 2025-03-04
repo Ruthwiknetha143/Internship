@@ -5,4 +5,7 @@
 - shebang allows for the usage of bash language in the the file being created
 
 - Command:
+  + echo - basically print command
+  + $ - for calling variables in the echo command
+  + read - used to take input of the user (follow up with a variable name to store the input)
   + 
