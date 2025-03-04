@@ -9,7 +9,8 @@
   + $ - for calling variables in the echo command
   + read - used to take input of the user (follow up with a variable name to store the input)
 
-Note: There are several in-build command such as $SHELL, $RANDOM, $PWD, which can be used as well for the scripting
+Note: There are several in-build variables such as $SHELL, $RANDOM, $PWD, which can be used as well for the scripting. Also you can add your own variables and make it 
+  available across the system by adding it in the .bashrc file, which can be found in the /root directory
 
 - Arithmetic operations:
   + $(()) - Always be sure to cover your arithmetic operations in this parenthesis for the shell to interpret that there is arithmetic operation going on
