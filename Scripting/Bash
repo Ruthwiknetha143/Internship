@@ -68,4 +68,9 @@ Note: There are several in-build variables such as $SHELL, $RANDOM, $PWD, which 
   Note: Test operators in the conditions need to be changed for integers and strings accordingly
 
 - Looping statements:
-  +
+  + WHILE LOOP
+    __________
+  while [[ //condition ]]
+  do
+      //statements
+  done
