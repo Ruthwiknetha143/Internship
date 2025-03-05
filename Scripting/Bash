@@ -8,7 +8,8 @@
 - Basic commands:
   + echo "some message" - basically print command
   + $<variable_name> - for calling variables in the echo command (can be reassigned within the same script)
-  + read <variable_name> - used to take input of the user (follow up with a variable name to store the input)
+  + read <variable_name> - used to take input of the user and storing it in the variable
+    read -p "some message" <variable> - taking input with a prompt message and storing it in the variable
   + exit <error_code> - <error_code> needs to be apt for basic usage
 
 Note: There are several in-build variables such as $SHELL, $RANDOM, $PWD, which can be used as well for the scripting. Also you can add your own variables and make it 
