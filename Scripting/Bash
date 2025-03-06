@@ -3,7 +3,7 @@
 
 - Always start the script with a shebang --> #!/bin/bash
 - shebang allows for the usage of bash language in the the file being created
-- Be sure to understand that the syntax of all the command and statements are case-sensitive and space-sensitive
+- Be sure to understand that the syntax of all the commands and statements are case-sensitive and space-sensitive
 
 - Basic commands:
   + echo "some message" - basically print command
