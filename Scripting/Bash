@@ -90,4 +90,6 @@ Note: There are several in-build variables such as $SHELL, $RANDOM, $PWD, which 
     for <variable> in {range};
     do
         //statements
-    done  
+    done
+
+    Note: There are other commands like continue and break, which can be used to change the behaviour of the loops
