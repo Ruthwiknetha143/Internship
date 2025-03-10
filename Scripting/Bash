@@ -17,7 +17,7 @@ Note: There are several in-build variables such as $SHELL, $RANDOM, $PWD, which 
   available across the system by adding it in the .bashrc file, which can be found in the /root directory
 
 - Arithmetic operations:
-  + $(()) - Always be sure to cover your arithmetic operations in this parenthesis for the shell to interpret that there is arithmetic operation going on
+  + $(()) / (()) - Always be sure to cover your arithmetic operations in this parenthesis for the shell to interpret that there is arithmetic operation going on
 
   + LOGICAL OPERATORS
 
