@@ -44,3 +44,13 @@ Contains Hands-on lab
     - Damn Vulnerable Web App
     - Metasploitable 1-3
     - OWASP WebGoat
+
+-> Use sudo user
+    Try to download different applications
+    Have more than one browser for different types of attacks, preferrably chromium
+    Browser Add-ons - Proxy switchers, Cookie editors, Website Technology enumeration
+
+-> Needed extensions
+    - FoxyProxy
+    - Wappalyzer
+    - Cookie editor
