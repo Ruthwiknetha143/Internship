@@ -1,0 +1,9 @@
+-> Important protocols
+    ICMP - for pinging
+    TCP - Three-way handshake and reliable connections
+    UDP - Faster handshakes and unreliable connections
+    GOAL - find weaknesses in the softwares that use these protocols
+    Ports - doorways for interaction of network services
+
+-> Tools for network enumeration
+    nmap, netcat, masscann
