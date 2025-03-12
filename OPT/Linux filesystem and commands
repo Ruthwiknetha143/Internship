@@ -19,3 +19,25 @@
     use man <command> to get manual pages of command meaning and its usage, also use help tags (-h)
     Also understand the importance of permissions
     history - to look at used commands
+
+-> WHO
+    whoami - to display the current user
+    id - displays users and group names
+    uname - prints details about operating system's kernal
+            use -a to get detailed information
+
+-> WHAT
+    sudo -l - commands that can be run as a root user
+    In "id" root users are represented by 0 and regular users are represented by 1000
+    strings - shows printable characters in a binary
+    head/tail - used to print only the first or last lines of a file
+    Permissions:
+        groups = owner, group, users
+        types = r - read, w - write, x - executable, d - is a dir
+    ps aux - prints all running processes
+
+-> WHEN
+    Need a cron utility which is useful for privilege escalation, and execute certain commands at certain times, reverse shelling
+
+-> WHERE
+    
