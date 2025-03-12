@@ -30,3 +30,13 @@
     -sV - used to get the service version
     --script-vuln - used NSE (Nmap scripting engine)
     -A - aggresive scan
+    -n - No DNS resolution
+    --randomized-hosts - scans completely randomized
+    --send-eth - sends using way libpcap
+
+-> masscan commands
+
+    Need separate open ports to dump information regarding scanned ports
+    P.S - Need to learn a bit about "iptables" firewalling
+    Has a bit of a learning curve, need to use it regularly
+
