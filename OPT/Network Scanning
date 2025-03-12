@@ -8,7 +8,7 @@
 -> Tools for network enumeration
     nmap, netcat, masscann
 
--> nmap commands
+-> nmap
 
     nmap <ip-address> - scan a single ip address with top 1000 ports
     nmap <192.0.1.1/24>--  Both of them used to scan multiple ip addresses at once
@@ -31,12 +31,24 @@
     --script-vuln - used NSE (Nmap scripting engine)
     -A - aggresive scan
     -n - No DNS resolution
+    -sn - ping scan, no ports
     --randomized-hosts - scans completely randomized
     --send-eth - sends using way libpcap
 
--> masscan commands
+-> masscan
 
     Need separate open ports to dump information regarding scanned ports
     P.S - Need to learn a bit about "iptables" firewalling
     Has a bit of a learning curve, need to use it regularly
 
+-> netstat
+
+    unencrypted traffic scanning
+    nc <target-ip> <port-range>
+    -nv - does not resolve DNS
+    -w <seconds> - sets timeout
+    -z - specific port scan
+    -u - UDP mode (unreliable)
+
+-> An example one liner for nmap scanning
+    nmap <ip-addr> -sn -n -oG -|awk '/Up$/{print $2}' > file.txt
