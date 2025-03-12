@@ -56,3 +56,22 @@ Contains Hands-on lab
     - Cookie editor
 
 -> Also install BeEF-xss
+
+-> Linux filesystem
+    /root - root users home dir
+    /home - user's dir
+    /etc - system config files and shadows files
+    /bin and /sbin - System binaries, contains info about commands you can run
+    /usr - user's binaries and libraries can be found here
+    /var - contains logs and apaches, web files can also be found
+    /dev - device drivers
+    /lib - contains shared libraries
+    /boot - files for booting system
+    /mnt - mount point for media such as CD/DVD/USB
+    /proc - contains processes marked as files
+    /tmp - holds temporary files (important)
+
+-> # - root
+    $ - non-root
+    Linux treats everything as a file
+    use "man" command to understand
