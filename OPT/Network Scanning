@@ -7,3 +7,26 @@
 
 -> Tools for network enumeration
     nmap, netcat, masscann
+
+-> nmap commands
+
+    nmap <ip-address> - scan a single ip address with top 1000 ports
+    nmap <192.0.1.1/24>--  Both of them used to scan multiple ip addresses at once
+         <192.0.1.1-100>
+    -iL <file_name> - Scan targets from the file
+    -p - single or a range of ports
+    -p- - for scanning all 65535 ports
+
+    -sU - UDP scanning
+    -Pn - No ping scan
+    output to a file
+        -oN = Normal
+        -oX = XML file
+        -oG = grepable
+        -oA = all formats
+    -T<0-5> - timed scans
+
+    -sC - used to scan with default scripts
+    -sV - used to get the service version
+    --script-vuln - used NSE (Nmap scripting engine)
+    -A - aggresive scan
