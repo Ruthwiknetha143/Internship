@@ -1,0 +1,21 @@
+-> Linux filesystem - case-sensitive
+    /root - root users home dir
+    /home or ~ - user's dir
+    /etc - system config files and shadows files
+    /bin and /sbin - System binaries, contains info about commands you can run
+    /usr - user's binaries and libraries can be found here
+    /var - contains logs and apaches, web files can also be found
+    /dev - device drivers
+    /lib - contains shared libraries
+    /boot - files for booting system
+    /mnt - mount point for media such as CD/DVD/USB
+    /proc - contains processes marked as files
+    /tmp - holds temporary files (important)
+
+-> # - root
+    $ - non-root
+    Linux treats everything as a file
+    use file <dir/file name> to understand the usage of specific file
+    use man <command> to get manual pages of command meaning and its usage, also use help tags (-h)
+    Also understand the importance of permissions
+    history - to look at used commands
