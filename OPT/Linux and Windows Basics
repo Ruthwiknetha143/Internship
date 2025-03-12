@@ -47,3 +47,18 @@
 
 -> HOW
     Documentation for all your commands usage
+
+===========================================================================================================================================================================
+
+-> Windows filesystem (also try to learn cmd and powershell) - case insensitive
+    Named drives - A,B,C,D
+    /Program files - for storing 64-bit programs
+    /Program files(x86) - for storing 32-bit and 16-bit programs
+    /Users - General users and their related files
+    /Windows - contains /system and /system32 containing exe and dll files
+    /netpub - default dir for web server(IIS)
+    UAC is needed for privileges as admin in cmd
+    /? / --help - used for help regarding commands
+
+-> whoami (or) whoami /all - for getting user information (netuser as well)
+    --- refer to scripting folder for detailed commands ---
