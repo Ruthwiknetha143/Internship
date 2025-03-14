@@ -34,6 +34,7 @@
     -sn - ping scan, no ports
     --randomized-hosts - scans completely randomized
     --send-eth - sends using way libpcap
+    -sT - full three-way handshake
 
 -> masscan
 
@@ -55,5 +56,6 @@
 
 
 --> wireshark
-    - It is an open source network analyzer
+    - It is an open source network analyzer/packet sniffer
     - Used to debugging traffic of a website or a host
+    - Use filtering to get a good amount of information regarding handshake and traffic
