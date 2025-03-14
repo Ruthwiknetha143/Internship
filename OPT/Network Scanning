@@ -62,5 +62,5 @@
 
 -> Ncat - A project by nmap folks can be used for an encrypted scanning or execution of commands to get most of the scans
     Can be done by
-    ncat -nvlp <port_number> --ssl - for an encrypted ssl
+    ncat -nvlp <port_number> --ssl - for an encrypted listening ssl
     ncat <ip_addr> <port_number> --ssl - to connect that port via an ip address in a encrypted fashion
