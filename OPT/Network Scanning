@@ -64,3 +64,34 @@
     Can be done by
     ncat -nvlp <port_number> --ssl - for an encrypted listening ssl
     ncat <ip_addr> <port_number> --ssl - to connect that port via an ip address in a encrypted fashion
+
+-> Server message block
+    Also known as Common internet file system (CIFS)
+    Contains in both windows and linux
+    Consists of 3 versions:
+        SMB 1: Old and disabled on the newer version of windows
+        SMB 2: Guest access is disabled and reduces noise
+        SMB 3: Uses encryption and credentials. So safe
+
+    Port 139: SMB 1 over NetBIOS, only hostname is required (\\host\files)
+    Port 445: SMB 2/3 over IP, need IP address (\\192.0.0.0\files)
+
+    Tools:
+        - nmap NSE
+        - enum4linux
+        - smbclient
+        - rpcclient
+
+    Shares need to get access to:
+        C$ = C drive of remote host
+        Admin$ = Access to windows installation dir
+        IPC$ = Inter-process comms, No access to files and dirs (used to trigger eternal blue)
+
+    nmap:
+        nmap <target> --script=smb-enum*
+        nmap <target> --script=smb-vuln*
+        nmap <target> --script=smb-os*
+
+    rpcclient - used to enumerate users and domain users on the SMB (use help)
+
+    smbclient - Main tool, used to login and interact with the files and dirs of the SMB (use help)
