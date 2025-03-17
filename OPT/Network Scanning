@@ -92,6 +92,37 @@
         nmap <target> --script=smb-vuln*
         nmap <target> --script=smb-os*
 
+    While querying users and administrators: use 1000(for the first user) followed by 1001, 1002... and 500(for the administrator)
+
     rpcclient - used to enumerate users and domain users on the SMB (use help)
 
     smbclient - Main tool, used to login and interact with the files and dirs of the SMB (use help)
+
+    smb logins can be brute-forced using HYDRA combined with ROKU for passwords list
+
+-> Network filesystem (NFS)
+    Similar to SMB but also can be mounted locally
+    Is open standard and can be used by anyone
+    Tools like rpcinfo are used for this purpose
+    used to get local access to remote host files, which can be used to generate an SSH key to ultimately control the remote host shell
+
+-> SMTP (simple mail transfer protocol, port: 25)
+    nmap <target_addr> --script=smtp* -p <port_number>
+    tool used is smtp-user-enum (need to be installed)
+
+-> SNMP (simple network management protocol port: 161)
+    stored in database called master information base(MIB) which is further comprised into object identifiers(OIDs)
+    consist of three versions
+        v1 v2c(no encryption), v3(most secure)
+    nmap -sU <target_addr> -p <port_number> --script=snmp-win32-users
+    tool used is onesixtyone, snmp-check, snmp-walk
+
+-> FTP (file transfer protocol port:21)
+    can login anonymously with limited privileges
+    just use - ftp <target_addr>
+    also can use HYDRA to brute force the access to the ftp server
+    Be sure to be in BINARY mode rather than ASCII mode to download file rather then text files
+
+-> SSH (Secure Shell port:22)
+    but be sure to change ports for better security
+    uses asymmetric encryption, and very stable than other remote shells
