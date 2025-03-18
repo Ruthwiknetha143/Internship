@@ -126,3 +126,8 @@
 -> SSH (Secure Shell port:22)
     but be sure to change ports for better security
     uses asymmetric encryption, and very stable than other remote shells
+    some SSH might not give access to the shell, then specifying the type of shell you are trying to access might help
+
+    Port forwarding:
+        - local port forwarding - used to establish a one to one connection to a system, on a port specified which can located in a different subnet
+        - dynamic port forwarding - Need to setup SOCK4proxy, better than local port forwarding for the usage of tools
