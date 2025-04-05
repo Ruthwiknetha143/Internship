@@ -1,0 +1,43 @@
+- File Operations
+
+    Ctrl + O: Save the current file.
+    Ctrl + X: Exit Nano.
+    Ctrl + R: Insert another file into the current one.
+    Ctrl + G: Display help text.
+
+- Editing Text
+
+    Ctrl + K: Cut the current line into the cutbuffer.
+    Alt + 6: Copy the current line into the cutbuffer.
+    Ctrl + U: Paste the contents of the cutbuffer.
+    Ctrl + J: Justify the current paragraph.
+
+- Searching and Replacing
+
+    Ctrl + W: Search for a string or a regular expression.
+    Ctrl + F: Start a forward search.
+    Ctrl + B: Start a backward search.
+    Alt + R: Start a replacing session.
+
+- Navigation
+
+    Ctrl + P: Move to the previous line.
+    Ctrl + N: Move to the next line.
+    Ctrl + A: Move to the beginning of the current line.
+    Ctrl + E: Move to the end of the current line.
+    Ctrl + Y: Move up one page.
+    Ctrl + V: Move down one page.
+
+- Text Deletion
+
+    Ctrl + H: Delete the character before the cursor.
+    Ctrl + D: Delete the character under the cursor.
+    Alt + Backspace: Delete the word to the left.
+    Alt + D: Delete the word to the right.
+
+- Miscellaneous
+
+    Ctrl + C: Show the current cursor position.
+    Alt + A: Set or unset the mark.
+    Ctrl + L: Refresh the screen.
+    Alt + Z: Hide/unhide the info bars.
