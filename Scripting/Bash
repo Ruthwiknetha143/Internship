@@ -34,7 +34,7 @@ Note: There are several in-build variables such as $SHELL, $RANDOM, $PWD, which 
 - Conditional statements:
   + IF STATEMENT
     ____________
-    if [[ <variable> == <some_variable/input> ]]; then              
+    if [[ $<variable> == <$some_variable/input> ]]; then              
           //statement
     else
           //statement
